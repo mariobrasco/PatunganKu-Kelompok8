@@ -324,7 +324,7 @@ int main() {
     int p;
 
     do {
-        cout << "\n=== MENU ===\n";
+        cout << "\n=== PatunganKu Menu ===\n";
         cout << "1. Tambah Transaksi\n";
         cout << "2. Lihat Semua Transaksi\n";
         cout << "3. Belum Lunas\n";
