@@ -163,11 +163,14 @@ void tampilkanSemua() {
 
         for(int i=0;i<cur->jumlahPeserta;i++) {
             int sisa = cur->peserta[i].totalBayar - cur->peserta[i].sudahBayar;
+            
+            string status = (sisa == 0) ? "Lunas" : "Belum Lunas";
 
             cout << cur->peserta[i].nama
                  << " | Total: " << cur->peserta[i].totalBayar
                  << " | Bayar: " << cur->peserta[i].sudahBayar
-                 << " | Sisa: " << sisa << endl;
+                 << " | Sisa: " << sisa 
+                 << " | Status: " << status << endl;
         }
 
         cur = cur->next;
